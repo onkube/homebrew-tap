@@ -4,8 +4,7 @@
 
 The easiest way to install `okctl` is via [Homebrew](https://brew.sh):
 
-    $ brew tap okctl/tap
-    $ brew install okctl
+    $ brew install onkube/tap/okctl
 
 You may also download the appropriate release for your platform
 from the [releases page](https://github.com/onkube/homebrew-tap/releases).
