@@ -5,24 +5,24 @@
 class Okctl < Formula
   desc "onkube.io CLI"
   homepage ""
-  version "0.0.1-pre3"
+  version "0.0.1-pre4"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/onkube/homebrew-tap/releases/download/v0.0.1-pre3/okctl-darwin-arm64.tar.gz"
-      sha256 "92e7d4b1c97df7a2745ee882090cc7a4984c7fb59c36bdc30b28f9f2ef1425f6"
+      url "https://github.com/onkube/homebrew-tap/releases/download/v0.0.1-pre4/okctl-darwin-arm64.tar.gz"
+      sha256 "e2b8dbfe44047badd82fd2006145fe98c31755a8a22ebe13ac84a1eed7f16512"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/onkube/homebrew-tap/releases/download/v0.0.1-pre3/okctl-darwin-amd64.tar.gz"
-      sha256 "6b26b3427744b6544f05bd01dfbecb48c10fa2e3a2e65e68b8be0746daf571af"
+      url "https://github.com/onkube/homebrew-tap/releases/download/v0.0.1-pre4/okctl-darwin-amd64.tar.gz"
+      sha256 "0a981c43e4ff6885c6de5596ad00e1d629674caf2242cdd59a53bf7b69b56889"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/onkube/homebrew-tap/releases/download/v0.0.1-pre3/okctl-linux-amd64.tar.gz"
-      sha256 "c9324fa8f57a835843eccc8b27989f9d991e36dc5f6b5c2dfb29fdda3aa579b5"
+      url "https://github.com/onkube/homebrew-tap/releases/download/v0.0.1-pre4/okctl-linux-amd64.tar.gz"
+      sha256 "8a76141805bcb6af9ef06e47edfa90fcc48caac23c3bc15fefd35c9c7ba44b52"
     end
   end
 
