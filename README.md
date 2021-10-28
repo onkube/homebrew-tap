@@ -1,4 +1,4 @@
-# okctl - CLI fro onkube.io
+# okctl - CLI for onkube.io
 
 ## Installation
 
