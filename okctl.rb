@@ -5,20 +5,20 @@
 class Okctl < Formula
   desc "onkube.io CLI"
   homepage ""
-  version "0.0.7"
+  version "0.0.8"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/onkube/homebrew-tap/releases/download/v0.0.7/okctl-darwin-arm64.tar.gz"
-      sha256 "09860bd9dbae2fa1b388cf280f45b42813d770a44166f1e2b056eafad7bb0241"
+      url "https://github.com/onkube/homebrew-tap/releases/download/v0.0.8/okctl-darwin-arm64.tar.gz"
+      sha256 "947f96cb917530b42f7bc3f49659018c8fefab2524ff81ade08e8b81c2178824"
 
       def install
         bin.install "okctl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/onkube/homebrew-tap/releases/download/v0.0.7/okctl-darwin-amd64.tar.gz"
-      sha256 "df5741b6085168381a243a698e05245a99f44ea15ef193a99c5d1e6941ce39c1"
+      url "https://github.com/onkube/homebrew-tap/releases/download/v0.0.8/okctl-darwin-amd64.tar.gz"
+      sha256 "72ccd0f404b57256f495323a952113de661e312b39823918636a0315df9e899e"
 
       def install
         bin.install "okctl"
@@ -28,8 +28,8 @@ class Okctl < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/onkube/homebrew-tap/releases/download/v0.0.7/okctl-linux-amd64.tar.gz"
-      sha256 "c99b7349648d26fb56e9340907e4850efc4f22ff6476a30653b636b0f06129cf"
+      url "https://github.com/onkube/homebrew-tap/releases/download/v0.0.8/okctl-linux-amd64.tar.gz"
+      sha256 "9f4d48fb01b59fc5dd62ca1d2e5c02661caa5479166f396f31eaa16492ba4908"
 
       def install
         bin.install "okctl"
