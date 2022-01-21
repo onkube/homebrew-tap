@@ -1,10 +1,10 @@
-# okctl - CLI for onkube.io
+# onctl - CLI for onkube.com
 
 ## Installation
 
-The easiest way to install `okctl` is via [Homebrew](https://brew.sh):
+The easiest way to install `onctl` is via [Homebrew](https://brew.sh):
 
-    brew install onkube/tap/okctl
+    brew install onkube/tap/onctl
 
 You may also download the appropriate release for your platform
 from the [releases page](https://github.com/onkube/homebrew-tap/releases).
