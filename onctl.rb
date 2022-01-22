@@ -5,20 +5,20 @@
 class Onctl < Formula
   desc "onkube.io CLI"
   homepage ""
-  version "0.0.15"
+  version "0.0.16"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/onkube/homebrew-tap/releases/download/v0.0.15/onctl-darwin-arm64.tar.gz"
-      sha256 "d41a07bdfffa7c1aead45932b50116e3074f2f7e547b66f5bc1ab2d710b94959"
+    if Hardware::CPU.intel?
+      url "https://github.com/onkube/homebrew-tap/releases/download/v0.0.16/onctl-darwin-amd64.tar.gz"
+      sha256 "7ec8ed3e77f782e16b9c446c481dc65555d0052d1f6344bd6518395d6af8f1e2"
 
       def install
         bin.install "onctl"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/onkube/homebrew-tap/releases/download/v0.0.15/onctl-darwin-amd64.tar.gz"
-      sha256 "a57eabda573cc63b364d96bf09e0dca1f40b7c3f677ed12f3fab4e5b5c42b94c"
+    if Hardware::CPU.arm?
+      url "https://github.com/onkube/homebrew-tap/releases/download/v0.0.16/onctl-darwin-arm64.tar.gz"
+      sha256 "0638ab237ec126c467947ae8bcf56473dc6a74b507de145ca1b6d909aab8bf01"
 
       def install
         bin.install "onctl"
@@ -28,8 +28,8 @@ class Onctl < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/onkube/homebrew-tap/releases/download/v0.0.15/onctl-linux-amd64.tar.gz"
-      sha256 "5441b1d004f70ca33d1d6fbd09203ce2c27595d986c48b914157e54d241e44b2"
+      url "https://github.com/onkube/homebrew-tap/releases/download/v0.0.16/onctl-linux-amd64.tar.gz"
+      sha256 "63877e540b776cf51bdc57d332b6b6d890c118b801576da1a3c9d87e5f1d3654"
 
       def install
         bin.install "onctl"
